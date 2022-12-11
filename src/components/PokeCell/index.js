@@ -1,9 +1,9 @@
 import React from 'react'
 import './PokeCell.css'
 
-const PokeCell = ({pokeClass, handleOnClick}) =>{
+const PokeCell = ({pokeClass, handleOnclick}) =>{
     return (
-        <button handleOnClick={()=> handleOnClick(pokeClass + 1)} className='poke-cell'>
+        <button onClick={()=> handleOnclick(pokeClass + 1)} className='poke-cell'>
             <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeClass + 1}.png`} />
         </button>
     )

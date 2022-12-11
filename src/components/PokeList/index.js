@@ -2,12 +2,12 @@ import React, {useState, useEffect} from 'react'
 import PokeCell from '../PokeCell'
 import './PokeList.css'
 
-const PokeList = ({handleOnClick}) => {
+const PokeList = ({handleOnclick}) => {
     const [pokemon, setPokemon] = useState([])
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+            const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=898')
             const data = await response.json()
             const pokemonList = data.results.slice(0, data.results.length).map(items => items).flat()
             setPokemon(pokemonList)
@@ -19,7 +19,7 @@ const PokeList = ({handleOnClick}) => {
         <section className='poke-list'>
             {pokemon.map((pokeClass, id) => {
                 return (
-                    <PokeCell key={id} pokeClass={id} handleOnClick={handleOnClick} />
+                    <PokeCell key={id} pokeClass={id} handleOnclick={handleOnclick} />
                 )
             })}
         </section>

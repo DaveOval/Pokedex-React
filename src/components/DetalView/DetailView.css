@@ -13,8 +13,9 @@
     width: 150px;
     height: 150px;
     margin: 10px auto;
-    background-color: #585858;
-    border: 15px solid #dedede;
+    background-image: url(./back_pokemon.png);
+    background-size: cover;
+    border: 10px solid #dedede;
     border-radius: 10px;
     color: #585858;
 }
