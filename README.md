@@ -1,5 +1,9 @@
 # Pokedex con react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ver deploy en [Github pages](https://daveoval.github.io/Pokedex-React/).
+
+## Captura de del pokedex:
+![Pokedex](./public/gh.PNG)
+
 
 
