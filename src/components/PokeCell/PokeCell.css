@@ -8,3 +8,10 @@
     border-radius: 15px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
 }
+.poke-cell:hover{
+    scale: 1.1;
+    background-color: rgb(232, 231, 231);
+}
+.poke-cell::content{
+    background-color: aquamarine;
+}

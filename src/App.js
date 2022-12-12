@@ -19,7 +19,7 @@ class App extends Component{
     this.handleOnclick = this.handleOnclick.bind(this)
   }
   handleOnclick(id) {
-    fetch(`http://pokeapi.co/api/v2/pokemon/${id}/`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
       .then(response => response.json())
       .then(data => {
         const pokemon = new Pokemon(data)
